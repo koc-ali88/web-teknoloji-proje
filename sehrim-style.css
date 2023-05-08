@@ -9,7 +9,7 @@ body {
 			grid-template-rows: auto 1fr;
 			grid-template-areas: 
 				"header header header header header header header"
-				"nav main main main main main aside";
+				"nav main main main main main main";
 			min-height: 100vh;
 		}
 		header {
@@ -38,13 +38,10 @@ body {
 		nav a:hover {
 			background-color: #adadad;
 		}
-		figure img {
-			border: 15px solid #c7c7c7;
-			height: 35vh;
-			width: 30vw;
-		}
-		figcaption {
-			text-align: center;
+		.carousel {
+			background-color: #e8e8e8;
+			max-width: 1100px;
+			padding: 1vw;
 		}
 		@media (max-width: 650px) {
 			section {

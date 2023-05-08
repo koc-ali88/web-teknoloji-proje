@@ -9,14 +9,14 @@ body {
 			grid-template-rows: auto 1fr;
 			grid-template-areas: 
 				"header header header header header header header"
-				"nav main main main main main aside";
+				"nav main main main main main blank"; /* blank -> kenarda boşluk bırakınca daha hoş duruyor */
 			min-height: 100vh;
 		}
 		header {
 			grid-area: header;
 			background-color: #404040;
 			color: white;
-			padding: 10px;
+			padding: 25px;
 			/*text-align: center; hoş gözükmedi*/
 		}
 		nav {
@@ -43,14 +43,6 @@ body {
 		}
 		nav a:hover {
 			background-color: #adadad;
-		}
-		figure img {
-			border: 15px solid #c7c7c7;
-			height: 35vh;
-			width: 30vw;
-		}
-		figcaption {
-			text-align: center;
 		}
 		@media (max-width: 650px) {
 			section {
