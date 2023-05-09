@@ -9,7 +9,7 @@ body {
 			grid-template-rows: auto 1fr;
 			grid-template-areas: 
 				"header header header header header header header"
-				"nav main main main main aside aside";
+				"nav main main main main main main";
 			min-height: 100vh;
 		}
 		header {
@@ -25,12 +25,12 @@ body {
 			padding: 10px;
 			min-width: 100px;
 		}
+		aside {
+			grid-area: aside;
+		}
 		main {
 			grid-area: main;
 			padding: 10px;
-		}
-		aside {
-			grid-area: aside;
 		}
 		nav a {
 			display: block;
@@ -41,16 +41,28 @@ body {
 		nav a:hover {
 			background-color: #adadad;
 		}
-		figure{
-			padding: 1vw;
+		figure {
+			display: inline-block;
+			vertical-align: top;
+			padding: 5vh;
 		}
 		figure img {
 			border: 15px solid #c7c7c7;
-			height: 35vh;
-			width: 30vw;
+			max-width: 100% !important;
 		}
 		figcaption {
 			text-align: center;
+		}
+		main {
+			text-align: center;
+		}
+		main a {
+			display: block;
+			color: #000000;
+			text-decoration: none;
+		}
+		main a:hover {
+			background-color: #d8d8d8;
 		}
 		@media (max-width: 650px) {
 			section {
@@ -59,8 +71,7 @@ body {
 				grid-template-areas: 
 					"header"
 					"nav"
-					"main"
-					"aside";
+					"main";
 			}
 			figure img {
 				
