@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Web Teknoloji Projem</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="kulturel-miras-style.css">
 </head>
 <body>
@@ -19,44 +19,183 @@
 			<a href="kulturel-miras.html">Kültürel Miras</a>
 		</nav>
 		<main>
-			<figure>
-				<img src="akcakoca-anit-mezari.jpg" alt="Akçakoca Anıt Mezarı" class="img-fluid mx-auto d-block">
-			</figure>
-			<a href="https://tr.wikipedia.org/wiki/Akça_Koca_Bey_Anıt_Mezarı" target="_blank"><h2>Akçakoca Anıt Mezarı</h2></a>
-			<p>1234-1328 yıllarında yaşamış Kocaeli Fatihi Akçakoca Bey, Osmanlı Devleti’nin kuruluşunda 
-				önemli rol oynamış, Kocaeli ve havalisinin Türk-İslâm yurdu haline gelmesinde gayret göstermiş 
-				bir Osmanlı Akıncı Beyi’dir. 1326 yılında Kandıra ve civarını, ardından Konur Alp ve Abdurrahman 
-				Gazi ile birlikte Kartal civarındaki Aydos’u, sonrasında da Samandıra Hisarı’nı fethetmiştir.</p>
-			<p>İzmit-Üsküdar arasındaki bölgeye de akınlarda bulunan Akçakoca, İzmit’in fethinden önce, 1328 
-				yılında Kandıra yakınlarındaki bir tepede vefat etmiş, eski Türk adetleri gereğince vefat ettiği 
-				yere defnedilmiştir. Fetihlerde bulunduğu İzmit ve çevresine, “Akçakoca Bey’in yurdu-toprakları” 
-				manasında “Koca-ili’” denilmiştir. Kandıra bölgesinin en yüksek tepesi olan Babadağ’da yer alan 
-				anıt mezar Türk Otağı görünümlüdür. 400 metre rakımlı tepeden ormanın yeşili ve denizin mavisine 
-				hakim panoramik manzarasını ve gün batımını izlemeden dönülmemeli.</p>
-			<figure>
-				<img src="izmit-saat-kulesi.jpg" alt="İzmit Saat Kulesi" class="img-fluid mx-auto d-block">
-			</figure>
-			<a href="https://tr.wikipedia.org/wiki/İzmit_Saat_Kulesi" target="_blank"><h2>İzmit Saat Kulesi</h2></a>
-			<p>Şehrin simgelerinden olan İzmit Saat Kulesi, 2. Abdülhamit Han’ın tahta çıkışının 25. yılı 
-				anısına, dönemin Kocaeli Valisi Musa Kazım Bey tarafından 1902 yılında yaptırılmıştır. Mimar 
-				Vedat Tek’in ilk yapıtlarından olan kule, neoklasik üslupta inşa edilmiş, inşasında mermerin 
-				yanı sıra Hereke ve Tavşancıl yörelerine özgü traverten taşlar kullanılmıştır. Kulenin en alt 
-				katında 3 yönde 3 adet çeşme yer alıyor. Bu sebillerin alınlığında ve kapısının üzerinde taş 
-				kitabeler bulunuyor.</p>
-			<figure>
-				<img src="gultepe-nekropolu.jpg" alt="Gültepe Nekropolü" class="img-fluid mx-auto d-block">
-			</figure>
-			<a href="https://tr.wikipedia.org/wiki/Gültepe_Nekropolü" target="_blank"><h2>Gültepe Nekropolü</h2></a>
-			<p>Nekropol, eski Yunanca’da “mezarlar şehri” anlamına gelir. Antik Çağ Nekropolü ile Bizans 
-				Dönemi’ne ait “kutsal yapı” kalıntısı hipoje (yeraltı mezarları) yol çalışmaları sırasında 
-				tesadüfen bulunmuştur. Bölgede ayrıca Roma Dönemi’ne ait Kiremit Mezar olarak adlandırılan, 
-				yakılan ve kaynatılan cesetlerin kemiklerinin konulduğu üçgen şeklinde pişmiş topraktan imal 
-				edilmiş “kemiklikler” de bulunuyor. Daha üst kısımlarda ise ikinci ve üçüncü yüzyıllara ait 
-				Roma Dönemi lahitlerine rastlanıyor.</p>
+			<div class="accordion accordion-flush" id="accordionFlushExample">
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="flush-headingOne">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+					  Akçakoca Anıt Mezarı
+					</button>
+				  </h2>
+				  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<figure>
+							<img src="akcakoca-anit-mezari.jpg" alt="Akçakoca Anıt Mezarı" class="img-fluid mx-auto d-block">
+						</figure>
+						<a href="https://tr.wikipedia.org/wiki/Akça_Koca_Bey_Anıt_Mezarı" target="_blank"><h2>Akçakoca Anıt Mezarı</h2></a>
+						<p>1234-1328 yıllarında yaşamış Kocaeli Fatihi Akçakoca Bey, Osmanlı Devleti’nin kuruluşunda 
+							önemli rol oynamış, Kocaeli ve havalisinin Türk-İslâm yurdu haline gelmesinde gayret göstermiş 
+							bir Osmanlı Akıncı Beyi’dir. 1326 yılında Kandıra ve civarını, ardından Konur Alp ve Abdurrahman 
+							Gazi ile birlikte Kartal civarındaki Aydos’u, sonrasında da Samandıra Hisarı’nı fethetmiştir.</p>
+						<p>İzmit-Üsküdar arasındaki bölgeye de akınlarda bulunan Akçakoca, İzmit’in fethinden önce, 1328 
+							yılında Kandıra yakınlarındaki bir tepede vefat etmiş, eski Türk adetleri gereğince vefat ettiği 
+							yere defnedilmiştir. Fetihlerde bulunduğu İzmit ve çevresine, “Akçakoca Bey’in yurdu-toprakları” 
+							manasında “Koca-ili’” denilmiştir. Kandıra bölgesinin en yüksek tepesi olan Babadağ’da yer alan 
+							anıt mezar Türk Otağı görünümlüdür. 400 metre rakımlı tepeden ormanın yeşili ve denizin mavisine 
+							hakim panoramik manzarasını ve gün batımını izlemeden dönülmemeli.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="flush-headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+					  İzmit Saat Kulesi
+					</button>
+				  </h2>
+				  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<figure>
+							<img src="izmit-saat-kulesi.jpg" alt="İzmit Saat Kulesi" class="img-fluid mx-auto d-block">
+						</figure>
+						<a href="https://tr.wikipedia.org/wiki/İzmit_Saat_Kulesi" target="_blank"><h2>İzmit Saat Kulesi</h2></a>
+						<p>Şehrin simgelerinden olan İzmit Saat Kulesi, 2. Abdülhamit Han’ın tahta çıkışının 25. yılı 
+							anısına, dönemin Kocaeli Valisi Musa Kazım Bey tarafından 1902 yılında yaptırılmıştır. Mimar 
+							Vedat Tek’in ilk yapıtlarından olan kule, neoklasik üslupta inşa edilmiş, inşasında mermerin 
+							yanı sıra Hereke ve Tavşancıl yörelerine özgü traverten taşlar kullanılmıştır. Kulenin en alt 
+							katında 3 yönde 3 adet çeşme yer alıyor. Bu sebillerin alınlığında ve kapısının üzerinde taş 
+							kitabeler bulunuyor.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="flush-headingThree">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+					  Gültepe Nekropolü
+					</button>
+				  </h2>
+				  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<figure>
+							<img src="gultepe-nekropolu.jpg" alt="Gültepe Nekropolü" class="img-fluid mx-auto d-block">
+						</figure>
+						<a href="https://tr.wikipedia.org/wiki/Gültepe_Nekropolü" target="_blank"><h2>Gültepe Nekropolü</h2></a>
+						<p>Nekropol, eski Yunanca’da “mezarlar şehri” anlamına gelir. Antik Çağ Nekropolü ile Bizans 
+							Dönemi’ne ait “kutsal yapı” kalıntısı hipoje (yeraltı mezarları) yol çalışmaları sırasında 
+							tesadüfen bulunmuştur. Bölgede ayrıca Roma Dönemi’ne ait Kiremit Mezar olarak adlandırılan, 
+							yakılan ve kaynatılan cesetlerin kemiklerinin konulduğu üçgen şeklinde pişmiş topraktan imal 
+							edilmiş “kemiklikler” de bulunuyor. Daha üst kısımlarda ise ikinci ve üçüncü yüzyıllara ait 
+							Roma Dönemi lahitlerine rastlanıyor.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingFour">
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+						Konca Lahidi
+					  </button>
+					</h2>
+					<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+					  <div class="accordion-body">
+						<figure>
+							<img src="konca-lahdi.jpg" alt="Konca Lahdi" class="img-fluid mx-auto d-block">
+						</figure>
+						<a href="https://tr.wikipedia.org/wiki/Konca_Lahdi" target="_blank"><h2>Konca Lahdi</h2></a>
+						<p>MS. II. yüzyılda Roma döneminde yapılmış mezar, bölgede “Roma Mezarı” olarak bilinir. Mezar 
+							Bithynia bölgesindeki diğer lahitlere benzer bir forma sahiptir. Lahdin denize bakan kısmında 
+							bir kitabe bulunurken, diğer yüzünde ise bir erkek ve kadın figürü ile ayakta duran bir hizmetçi 
+							betimlenmiştir. Lahdin kitabesinde ise şu ifadeler yer alıyor: “Artemata ve Artemidoros’un 
+							oğulları Poidonei ve Apollonios kızı Tatia yaşarken bu lahdi kendilerine hazırlattılar. Yoldan 
+							geçenlere ve denizden geçenlere selam olsun.”</p>
+					  </div>
+					</div>
+				  </div>
+					<div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingFive">
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+						Hereke Kalesi
+					  </button>
+					</h2>
+					<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+					  <div class="accordion-body">
+						<figure>
+							<img src="hereke-kalesi.jpg" alt="Hereke Kalesi" class="img-fluid mx-auto d-block">
+						</figure>
+						<a href="https://tr.wikipedia.org/wiki/Hereke_Kalesi" target="_blank"><h2>Hereke Kalesi</h2></a>
+						<p>Kalenin 1326’daki fethi İzmit bölgesinin fetihlerinin tamamlayıcısı olur ve Osmanlı 
+							beyliğinebağlanır. Ancak bölgede Sultan II. Bayezid döneminde büyük bir deprem yaşanır. 
+							Depremde Hereke Kalesi tamamen ortadan kalkar. Felaketin ardından Hereke halkı uzun süre 
+							kendini toparlayamaz ve nam saldıkları dokumacılıkta da bir süre durağanlık yaşanır.</p>
+						<p>Doğu Roma İmparatorluğu döneminde, 640’lı yıllarda yapıldığı sanılan ve Evliya Çelebi’nin 
+							Seyahatnamesi’nde de bahsedilen Hereke Kalesi’nde, geçtiğimiz yıllarda restorasyon çalışmaları 
+							yapılmış ve en iyi proje ödülüne layık görülmüştür.</p>
+					  </div>
+					</div>
+				  </div>
+				  <div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingSix">
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+						Süleyman Paşa Hamamı
+					  </button>
+					</h2>
+					<div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+					  <div class="accordion-body">
+						<figure>
+							<img src="suleyman-pasa-hamami.jpg" alt="Süleyman Paşa Hamamı" class="img-fluid mx-auto d-block">
+						</figure>
+						<a href="https://tr.wikipedia.org/wiki/Süleyman_Paşa_Hamamı" target="_blank"><h2>Süleyman Paşa Hamamı</h2></a>
+						<p>Orhan Gazi Cami’ni de inşa ettiren Şehzade Süleyman tarafından yaptırılmıştır. Şehzade Süleyman, 
+							Orhan Gazi’nin oğludur. 1330’da İznik’in, 1337’de İzmit’in fethine katılan şehzadeye babası 
+							tarafından İzmit ve çevresi tımar olarak verilmiştir. Süleyman Paşa Hamamı, İzmit’te günümüze 
+							kadar ayakta kalabilen en erken tarihli Osmanlı Dönemi hamam yapısıdır. Erkek ve kadın 
+							kısımlarıyla çifte hamam şeklindedir. Her iki kısım da birbirine eşit planlı yapılmıştır. Ön 
+							kısımlarda üzeri çifte yüksek kubbe ile örtülü bir soğukluk bölümü, arkasında ise birbirine kapı 
+							ile bağlanan alçak kubbe örtülü iki halvet kısmından ibarettir. Her bölme de üç kubbelidir.</p>
+					  </div>
+					</div>
+				  </div>
+				  <div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingSeven">
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+						Hannibal Anıt Mezarı
+					  </button>
+					</h2>
+					<div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+					  <div class="accordion-body">
+						<figure>
+							<img src="hannibal-anit-mezari.jpg" alt="Hannibal Anıt Mezarı" class="img-fluid mx-auto d-block">
+						</figure>
+						<a href="https://tr.wikipedia.org/wiki/Hannibal_Anıtı" target="_blank"><h2>Hannibal Anıt Mezarı</h2></a>
+						<p>Hannibal Barca M.Ö. 247 ile M.Ö. 183 yılları arasında yaşamış Kartacalı politikacı ve generaldir. 
+							Antik dönemin en büyük komutanlarından ve tüm zamanların en büyük askeri dehalarından kabul edilir. 
+							Pek çok tarihçi tarafından Gebze’de öldüğü kabul edilen Hannibal’a, Atatürk’ün de büyük ilgisi 
+							vardı. Bu ilginin bir ifadesi olarak da Gebze’nin güneyinde bulunan bugünkü alana simgesel bir 
+							anıt mezar yapılmıştır.</p>
+					  </div>
+					</div>
+				  </div>
+				  <div class="accordion-item">
+					<h2 class="accordion-header" id="flush-headingEight">
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+						Portakal Hafız Konağı
+					  </button>
+					</h2>
+					<div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+					  <div class="accordion-body">
+						<figure>
+							<img src="portakal-hafiz-konagi.jpg" alt="Portakal Hafız Konağı" class="img-fluid mx-auto d-block">
+						</figure>
+						<a href="https://tr.wikipedia.org/wiki/Portakal_Hafız_Konağı" target="_blank"><h2>Portakal Hafız Konağı</h2></a>
+						<p>Bir zamanlar Osmanlı Mebuslar Meclisine İzmit Mebusu olarak katılan Hafız Rüştü Efendi’ye ait 
+							konak, sahibine yüzünün yuvarlaklığı nedeniyle halk arasında Portakal Hafız lakabı verilince, 
+							“Portakal Hafız Konağı” olarak nam salmış. 19. yüzyıl Türk konut mimarisinin özelliklerini 
+							gösteren konak üç sofalı bir plan düzenlemesine sahiptir. Dikdörtgen formlu pencereleri İzmit 
+							evlerinin geleneksel özelliklerini yansıtır. En dikkat çekici yönlerinden bir tanesi de geniş 
+							saçaklarıdır.</p>
+					  </div>
+					</div>
+				  </div>
+			  </div>
 		</main>
 	</section>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
