@@ -53,6 +53,9 @@ body {
 			text-align: center;
 		}
 		@media (max-width: 650px) {
+			header {
+				text-align: center;
+			}
 			section {
 				min-height: 0px;
 				grid-template-columns: 1fr;
