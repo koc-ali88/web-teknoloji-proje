@@ -15,6 +15,7 @@
 			<h1>İlgi Alanlarım</h1>
 		</header>
 		<nav>
+			<a href="login.php">Giriş Yap</a>
 			<a href="index.html">Ana Sayfa</a>
 			<a href="CV.html">CV</a>
 			<a href="sehrim.html">Şehrim</a>
