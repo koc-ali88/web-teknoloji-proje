@@ -7,9 +7,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: login.php?error=2');
         exit;
     }
-	elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header('Location: login.php?error=3');
-        exit;
+	else {
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL) && strlen($password) < 8) {
+            header('Location: login.php?error=3');
+            exit;
+        }
+        elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            header('Location: login.php?error=4');
+            exit;
+        }
+        elseif (strlen($password) < 8) {
+            header('Location: login.php?error=5');
+            exit;
+        }
     }
 
     if ($email === 'g221210059@sakarya.edu.tr' && $password === 'g221210059') {
@@ -46,6 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			<a href="sehrim.html">Şehrim</a>
 			<a href="kulturel-miras.html">Kültürel Miras</a>
 			<a href="ilgi-alanlarim.php">İlgi Alanlarım</a>
+            <a href="iletisim.html">İletişim</a>
 		</nav>
 		<main>
             <div class="container">
@@ -61,7 +72,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         echo '<p style="color: red;">Email ve şifre kutularını boş bırakamazsınız</p>';
                     }
                     if (isset($_GET['error']) && $_GET['error'] === '3') {
+                        echo '<p style="color: red;">Email formatı yanlış ve şifre en az 8 karakter olmalı. Lütfen tekrar deneyin</p>';
+                    }
+                    if (isset($_GET['error']) && $_GET['error'] === '4') {
                         echo '<p style="color: red;">Email formatı yanlış. Lütfen tekrar deneyin</p>';
+                    }
+                    if (isset($_GET['error']) && $_GET['error'] === '5') {
+                        echo '<p style="color: red;">Şifre en az 8 karakter olmalı. Lütfen tekrar deneyin</p>';
                     }
                     ?>
 

@@ -21,6 +21,7 @@
 			<a href="sehrim.html">Şehrim</a>
 			<a href="kulturel-miras.html">Kültürel Miras</a>
 			<a href="ilgi-alanlarim.php">İlgi Alanlarım</a>
+			<a href="iletisim.html">İletişim</a>
 		</nav>
 		<main>
 		<div class="container">
