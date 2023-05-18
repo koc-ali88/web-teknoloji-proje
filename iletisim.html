@@ -24,26 +24,26 @@
 			<a href="iletisim.html">İletişim</a>
 		</nav>
 		<main>
-			<div class="container" id="app">
-				<form ref="form" action="iletisim-sonuc.php" class="form-inline" method="POST" id="iletisim-form">
+			<div class="container">
+				<form action="iletisim-sonuc.php" class="form-inline" method="POST" id="iletisim-form">
 					<div class="mb-3 row">
 						<label for="inputUsername" class="col-sm-2 col-form-label">Kullanıcı adı:</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" name="kullaniciAdi" id="inputUsername" ref="inputUsername" required>
+							<input type="text" class="form-control" name="kullaniciAdi" id="inputUsername" required>
 							<div id="username-error-message"></div>
 						</div>
 					</div>
 					<div class="mb-3 row">
 						<label for="staticEmail" class="col-sm-2 col-form-label">Email:</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" name="eposta" id="staticEmail" ref="staticEmail" required>
+							<input type="text" class="form-control" name="eposta" id="staticEmail" required>
 							<div id="email-error-message"></div>
 						</div>
 					</div>
 					<div class="mb-3 row">
 						<label for="inputPassword" class="col-sm-2 col-form-label">Şifre:</label>
 						<div class="col-sm-10">
-							<input type="password" class="form-control" name="sifre" id="inputPassword" ref="inputPassword" required>
+							<input type="password" class="form-control" name="sifre" id="inputPassword" required>
 							<div id="password-error-message"></div>
 						</div>
 					</div>
@@ -51,7 +51,7 @@
 					<div class="mb-3 row">
 						<label for="form-select" class="col-sm-3 col-form-label">Yaşadığınız şehir:</label>
 						<div class="col-sm-9">
-							<select class="form-select" name="secilenSehir" id="sehirSec" ref="sehirSec" aria-label="Default select example">
+							<select class="form-select" name="secilenSehir" id="sehirSec" aria-label="Default select example">
 								<option value="0" selected>Seçiniz...</option>
 								<option value="Sakarya">Sakarya</option>
 								<option value="Kocaeli">Kocaeli</option>
@@ -64,7 +64,7 @@
 					<div class="mb-3 row">
 						<label for="inputAddress" class="col-sm-2 col-form-label">Adres:</label>
 						<div class="col-sm-10">
-							<textarea type="text" class="form-control" name="secilenAdres" id="inputAddress" ref="inputAddress" rows="3" required></textarea>
+							<textarea type="text" class="form-control" name="secilenAdres" id="inputAddress" rows="3" required></textarea>
 							<div id="address-error-message"></div>
 						</div>
 					</div>
@@ -108,7 +108,8 @@
 
 					<div id="isFormCleared"></div>
 					<button class="btn btn-outline-danger" onclick="formTemizle()" type="button">Temizle</button>
-					<input class="btn btn-outline-success my-2 my-sm-0" onclick="formGonder()" type="button" value="Gönder">
+					<input class="btn btn-outline-success my-2 my-sm-0" onclick="formGonder()" type="button" value="Gönder (js)">
+					<input class="btn btn-outline-success my-2 my-sm-0" onclick="formGonderQuery()" type="button" value="Gönder (jQuery)">
 				</form>
 			</div>
 		</main>
@@ -116,5 +117,7 @@
 <script src="bootstrap.min.js"></script>
 <script src="formTemizle.js"></script>
 <script src="formGonder.js"></script>
+<script src="jquery-3.7.0.min.js"></script>
+<script src="formGonder.jQuery.js"></script>
 </body>
 </html>
